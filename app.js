@@ -15,7 +15,6 @@ codigo_desencritar = {
     t:"a",z:"b",m:"g",
     w: "d",p: "e",9: "f",
     u: "g",q: "h",r: "i",
-    
     n: "j",s: "k",x: "l",
     a: "m",4: "n",5: "o",
     e: "p",7: "q",8: "r",
@@ -26,32 +25,69 @@ codigo_desencritar = {
 
 
 
-zona_texto_textarea = document.querySelector(".zona_texto_textarea");  // adquiere el objeto de .zona_printer q "DIV" donde se pinta la informacion ya encriptada
-zona_printer = document.querySelector(".zona_printer");  // adquiere el objeto de .zona_printer q "DIV" donde se pinta la informacion ya encriptada
+// adquiere el objeto de .zona_printer q "DIV" donde se pinta la informacion ya encriptada
+ // adquiere el objeto de .zona_printer q "DIV" donde se pinta la informacion ya encriptada
 
 
-function encriptar ()
+function encriptar (texto)
     {
-        n_dato = Array.from(zona_texto_textarea.value).map(
+
+        debugger
+
+        const  n_dato = Array.from(texto).map(
         function(value)
         {
-        return codigo_encritar[value]
+        return codigo_encritar[value];
         })
 
-        zona_printer.innerHTML = n_dato.join("");  
+        imprimir(n_dato.join(""))
+
+
     }
 
     
-function des_encriptar ()
+function desencriptar (texto)
     {
-        n_dato = Array.from(zona_texto_textarea.value).map(
+        const n_dato = Array.from(texto).map(
         function(value)
         {
-        return codigo_desencritar[value]
+        return codigo_desencritar[value];
         })
 
-        zona_printer.innerHTML = n_dato.join("");  
+       imprimir(n_dato.join(""))
+
+        
     }
 
+
+    function imprimir (texto){
+
+        zona_printer = document.querySelector(".zona_printer"); 
+        zona_printer.innerHTML = texto;  
+
+    }
+
+
+
+function saludo (type){
+
+    console.log(type)
+
+    zona_texto_textarea = document.querySelector(".zona_texto_textarea")
+    n_texto= zona_texto_textarea.value.toLowerCase()
+
+    if (zona_texto_textarea.value == "") {
+        imprimir("Ingresa texto porfavor")
+        return;
+    }
+    
+    if (type == "encriptar"){
+        encriptar(n_texto);
+    }else if (type == "desencriptar")
+    {
+        desencriptar(n_texto);
+    }
+
+}
 
 

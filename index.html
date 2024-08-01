@@ -15,14 +15,11 @@
    <div class="zona_encriptado">
    
     <div class="zona_texto_entrada">
-       <!-- 
-        <input class="zona_texto_entrada_texto"  type="text" placeholder="Ingrese Textos Aqui"> 
-        -->
         
         <textarea class="zona_texto_textarea" rows="10" cols="50">Ingrese Textos Aqui</textarea>
         <p>Letras minusculas y sin acento</p>
-        <input type="button" value="Encriptar" onclick="encriptar()">
-        <input type="button" value="Desencriptar" onclick="des_encriptar()">
+        <input type="button" value="Encriptar" onclick="( () => saludo('encriptar') )()">
+        <input type="button" value="Desencriptar" onclick="( () => saludo('desencriptar') )()">
         
     </div>
 
