@@ -25,8 +25,6 @@ codigo_desencritar = {
 
 
 
-// adquiere el objeto de .zona_printer q "DIV" donde se pinta la informacion ya encriptada
- // adquiere el objeto de .zona_printer q "DIV" donde se pinta la informacion ya encriptada
 
 
 function encriptar (texto)
@@ -62,7 +60,7 @@ function desencriptar (texto)
 
     function imprimir (texto){
 
-        zona_printer = document.querySelector(".zona_printer"); 
+        zona_printer = document.querySelector(".result_text_printer"); 
         zona_printer.innerHTML = texto;  
 
     }
@@ -73,7 +71,7 @@ function saludo (type){
 
     console.log(type)
 
-    zona_texto_textarea = document.querySelector(".zona_texto_textarea")
+    zona_texto_textarea = document.querySelector(".input_text_zone_text")
     n_texto= zona_texto_textarea.value.toLowerCase()
 
     if (zona_texto_textarea.value == "") {
