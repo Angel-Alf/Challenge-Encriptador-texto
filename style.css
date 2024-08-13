@@ -19,6 +19,8 @@
        height: 100vh;
    
    }
+
+  
    
    .result_text{
        border: 1px solid black;
@@ -53,6 +55,8 @@
    
    }
    
-   .aa{
+   .aa, .input_text_zone_text{
        height: 80%;
-   }
+       width: 90%;
+       word-wrap: break-word;
+       }
