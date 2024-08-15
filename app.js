@@ -25,6 +25,10 @@ codigo_desencritar = {
 
 
 
+ 
+
+
+
 
 
 function encriptar (texto)
@@ -63,6 +67,14 @@ function desencriptar (texto)
         zona_printer = document.querySelector(".result_text_printer"); 
         zona_printer.innerHTML = texto;  
 
+        boton = document.querySelector(".hola")
+        boton_copiar = document.createElement("input")
+        boton_copiar.setAttribute("class", "copiar")
+        boton_copiar.setAttribute("value", "Copiar")
+        boton.appendChild(boton_copiar);
+        
+    
+
     }
 
 
@@ -74,8 +86,19 @@ function saludo (type){
     zona_texto_textarea = document.querySelector(".input_text_zone_text")
     n_texto= zona_texto_textarea.value.toLowerCase()
 
+
     if (zona_texto_textarea.value == "") {
-        imprimir("Ingresa texto porfavor")
+
+        img_espera = document.querySelector(".hola")
+        nodoImg = document.createElement("img")
+        nodoImg.setAttribute("src", "1.png")
+        img_espera.appendChild(nodoImg);
+        
+        node = document.querySelector(".result_text_printer");
+        node.parentNode.removeChild(node);
+
+        
+
         return;
     }
     
