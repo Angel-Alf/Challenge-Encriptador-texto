@@ -30,7 +30,6 @@ codigo_desencritar = {
 function encriptar (texto)
     {
 
-        debugger
 
         const  n_dato = Array.from(texto).map(
         function(value)
