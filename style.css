@@ -95,7 +95,8 @@
 }
 
 .hola{
-    border: 3px solid white;
+    /* border: 3px solid green; */
+
     border-radius: 20px;
     background: white;
     width:90%;
@@ -144,11 +145,6 @@ button:hover {
     background: transparent;
 }
 
-
-
-
-
-
 .fail>img{
     margin-top: 150px;
     width: 300px;
@@ -171,60 +167,6 @@ button:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .hola.step-1 {
     display: none;
 }
@@ -243,5 +185,135 @@ textarea{
     resize: none;
     border: none;
 }
+
+
+
+
+
+@media ( max-width: 768px) {
+
+    .area_work{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 0px;
+    }
+
+    .input_text_zone_buton2, .input_text_zone_buton1{
+        width: 40%;
+        margin-left: 7%;
+    }
+
+    .img_error{
+        display: none;
+    }
+
+    .input_text_zone{
+        padding-top: 60px;
+        font-size: 32px;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .result_text{
+        width:100%;
+        height: 42%;
+    }
+
+
+
+    .hola{
+        border: 3px solid white;
+
+        height: auto;
+        border-radius: 20px;
+        background: white;
+
+    }
+
+    .mensaje_error{
+        background-color: transparent;
+        padding-top: 10px;
+        padding-bottom: 5px;
+    }
+
+    .result{
+
+        height: 430px;
+        border-radius: 20px;
+        background: white;
+    }
+
+    .aa{
+        height: 250px;
+    }
+    .copiar{
+        height: 100px;
+    }
+
+  
+
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

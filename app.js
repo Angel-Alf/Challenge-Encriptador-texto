@@ -2,7 +2,7 @@
 
 codigo_encritar = {
    a:"t",b:"z",c:"9",
-   d: "w",e: "p",f: "9",
+   d: "w",e: "p",f: "g",
    g: "u",h: "q",i: "r",
    j: "n",k: "s",l: "x",
    m: "a",n: "4",o: "5",
